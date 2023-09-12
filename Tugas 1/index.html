@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Tugas 1
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+            @media screen and (max-width: 1000px) {
+                #content,
+                aside{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+    
+            header{
+                display: inline;
+            }
+    
+            body{
+                font-family: 'Quicksand', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(77, 75, 75);
+            }
+    
+            main{
+                padding: 20px;
+                overflow: auto;
+            }
+    
+            h2, h3{
+                color: #00a2c6;
+            }
+    
+            *{
+                box-sizing: border-box;
+            }
+    
+            footer{
+                padding: 20px;
+                color: #ffffff;
+                background-color: #00a2c6;
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            nav{
+                background-color: #00a2c6;
+                padding: 5px;
+                position: sticky;
+                top: 0;
+            }
+    
+            nav li{
+                display: inline;
+                list-style-type: none;
+                margin-right: 20px;
+            }
+    
+            nav a{
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+                color: white;
+            }
+    
+            nav a:hover{
+                font-weight: bold;
+            }
+    
+            .profile header{
+                text-align: center;
+            }
+    
+            .profile img{
+                width: 200px;
+            }
+    
+            .card{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                padding: 20px;
+                margin-top: 20px;
+                background-color: dimgrey;
+                color: rgb(187, 187, 187);
+            }
+    
+            .featured-image{
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+    
+            .jumbotron{
+                font-size: 20px;
+                padding: 60px;
+                background-color: #00c8eb;
+                text-align: center;
+                color: white;
+            }
+    
+            #content{
+                float: left;
+                width: 75%;
+            }
+    
+            aside{
+                float: right;
+                width: 25%;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h1>Padang</h1>
+                <p>Kota Serambi Mekah</p>
+            </div>
+            <nav> 
+                <ul>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#geografis">Geografis</a></li>
+                    <li><a href="#wisata">Wisata</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <article id="sejarah" class="card">
+                    <h2>Sejarah</h2>
+                    <img src="Images/Sejarah.jpg" class="featured-image" alt="Sejarah">
+                    <p>Padang, ibu kota Provinsi Sumatera Barat, memiliki sejarah panjang yang mencakup pengaruh dari berbagai budaya, termasuk budaya Minangkabau yang khas. Kota ini merupakan pusat perdagangan penting pada masa lalu, dan sejak abad ke-17, wilayah ini telah dikenal sebagai pusat kebudayaan Minangkabau. Minangkabau memiliki sistem adat yang unik, dengan rumah adat dan warisan budaya yang kaya.</p>
+                </article>
+
+                <article id="geografis" class="card">
+                    <h2>Geografis</h2>
+                    <img src="Images/Geografis.jpg" class="featured-image" alt="Geografis">
+                    <p>Padang terletak di pantai barat Pulau Sumatera dan memiliki pemandangan alam yang menakjubkan. Wilayah ini dikelilingi oleh pegunungan dan memiliki pantai yang indah di sepanjang Pantai Padang. Gunung Merapi, salah satu gunung berapi aktif di Indonesia, terletak tidak jauh dari kota ini. Padang juga memiliki iklim tropis dengan musim hujan dan musim kemarau yang khas.</p>
+                </article>
+
+                <article id="wisata" class="card">
+                    <h2>Wisata</h2>
+                    <section>
+                        <h3>Ngarai Sianok</h3>
+                        <img src="Images/ngarai sianok.jpg" class="featured-image" alt="Ngarai Sianok">
+                        <p>Terletak dekat dengan Bukit Tinggi, Ngarai Sianok adalah jurang yang indah dengan hutan hujan tropis yang hijau. Ini adalah tempat yang bagus untuk trekking dan menikmati alam.</p>
+                    </section>
+                    <section>
+                        <h3>Pantai Pasir Jambak</h3>
+                        <img src="Images/pantai pasir jambak.jpg" class="featured-image" alt="Pantai Pasir Jambak">
+                        <p>pantai yang indah di dekat kota Padang. Anda bisa bersantai, berenang, atau menikmati matahari terbenam yang spektakuler.</p>
+                    </section>
+                </article>
+
+                <article id="kuliner" class="card">
+                    <h2>Kuliner</h2>
+                    <section>
+                        <h3>Rendang</h3>
+                        <img src="Images/rendang.jpg" class="featured-image" alt="Rendang">
+                        <p>hidangan daging sapi khas Indonesia, dengan bumbu kaya, rasa pedas, dan santan kelapa.</p>
+                    </section>
+                    <section>
+                        <h3>Nasi Kapau</h3>
+                        <img src="Images/nasi kapau.jpg" class="featured-image" alt="Nasi Kapau">
+                        <p>hidangan nasi khas Minangkabau dengan beragam lauk pauk, termasuk rendang, ayam goreng, dan bumbu kaya serta pedas.</p>
+                    </section>
+                </article>
+            </div>
+
+            <aside>
+                <article class="profile card">
+                    <header>
+                        <h2>Padang</h2>
+                        <p>Kota Serambi Mekah</p>
+                        <figure>
+                            <img src="Images/Logo Sumbar.png">
+                            <figcaption>Lambang Provinsi Sumbar</figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h3>Informasi Lanjutan</h3>
+                        <table>
+                            <tr>
+                                <th>Negara</th>
+                                <td>Indonesia</td>
+                            </tr>
+                            <tr>
+                                <th>Provinsi</th>
+                                <td>Sumatera Barat</td>
+                            </tr>
+                            <tr>
+                                <th>Luas Total</th>
+                                <td>695 km<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                                <th>Bahasa Daerah</th>
+                                <td>Minangkabau</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Tugas 1 PWEB, Abdurrahman Farimza 5025201125</p>
+        </footer>
+    </body>
+</html>
